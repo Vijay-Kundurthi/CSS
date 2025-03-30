@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      body { font-family: sans-serif;}
+      h1.highlight {
+        background-color: black;
+        color: white;
+        font-style: oblique;
+      }
+      span.highlight { background-color: aqua;}
+      p.highlight { background-color: yellow;}
+      .notebox {
+        border: 5px solid #666;
+        margin: 0.5em;
+        padding: 0.5em;
+      }
+      .notebox.warning { border-color: orange;}
+      .notebox.danger {border-color: red;}
+    </style>
+  </head>
+  <body>
+    <h1 class="highlight">Class selectors</h1>
+    <p>
+      Veggies es bonus vobis, proinde vos postulo essum magis
+      <span class="highlight">kohlrabi welsh onion</span> daikon amaranth tatsoi
+      tomatillo melon azuki bean garlic.
+    </p>
+
+    <p class="highlight">
+      Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley
+      shallot courgette tatsoi pea sprouts fava bean collard greens dandelion
+      okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+    </p>
+    <div class="notebox">This is an informational note.</div>
+
+    <div class="notebox warning">This note shows a warning.</div>
+
+    <div class="notebox danger">This note shows danger!</div>
+
+    <div class="danger">
+      This won't get styled — it also needs to have the notebox class
+    </div>
+  </body>
+</html>

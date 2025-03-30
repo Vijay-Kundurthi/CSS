@@ -1,0 +1,42 @@
+.container {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 30em;
+    border: 1px solid rgb(201, 203, 203);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #375e97;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    border-bottom: 1px solid #375e97;
+    font-style: italic;
+}
+
+.web-style {
+    color: gray;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: gray;
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+    border: 1px solid rebeccapurple;
+    padding: 15px
+}
+
+li a:link {
+    color: orange
+}
+
+li a:hover {
+    color:blue
+}
