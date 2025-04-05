@@ -1,0 +1,27 @@
+*, *::before, *::after {box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+:root {
+    --color-dark: #020617;
+    --color-light: #f1f5f9;
+    --color-slate: #94a3b8;
+    --color-primary: #e11d48;
+    --_clr-pri: var(--clr-pri, yellow)
+}
+body {
+    background-color: var(--color-dark);
+}
+.title {
+    color: var(--color-light);
+}
+
+.discription {
+    color: var(--color-slate);
+}
+.link {
+    /* color: var(--color-primary); */
+    color: var(--_clr-pri)
+}

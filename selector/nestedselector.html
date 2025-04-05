@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* .example {font-size: 1.5em;}
+        .example > a {color: tomato}
+        .example > a:hover, .example > a:focus {
+            background-color: tomato;
+            color:ivory
+        } */
+      .example {
+        font-family: system-ui;
+        font-size: 1.2rem;
+        & > a {
+          color: tomato;
+          &:hover,
+          &:focus {
+            color: ivory;
+            background-color: tomato;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="example">
+      This paragraph <a href="#">contains a link</a>, try hovering or focusing
+      it.
+    </p>
+  </body>
+</html>

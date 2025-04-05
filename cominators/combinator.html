@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+      .box p {
+        color: red;
+      }
+      ul > li {
+        border: 5px solid green;
+      }
+      h1 + p {
+        background-color: #333;
+        padding: 10px;
+        color: #fff;
+        font-family: sans-serif;
+        font-style: bold;
+    }
+    </style>
+  </head>
+  <body>
+    <!--decendent combinator (space) parent and child elements-->
+    <div class="box"><p>Text in .box</p></div>
+    <p>Text not in .box</p>
+    <!-- child selector-->
+    <ul>
+      <li>Unordered item</li>
+      <li>
+        Unordered item
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ol>
+      </li>
+    </ul>
+    <article>
+        <h1>A heading</h1>
+        <p>
+          Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+          daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+        </p>
+      
+        <p>
+          Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette
+          tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+          Dandelion cucumber earthnut pea peanut soko zucchini.
+        </p>
+      </article>
+      
+  </body>
+</html>

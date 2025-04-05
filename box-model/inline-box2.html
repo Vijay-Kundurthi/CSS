@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: large;
+        }
+        p {
+            border: 2px solid green;
+            width: 200px;
+        }
+        p span {
+            border: 3px solid blue;
+            background-color: #333;
+            color: white;
+            display: inline-block;
+            height: 80px;
+            width: 60px;
+            padding: 20px;
+            margin-left: 20px;
+
+        }
+        ul {
+          border: 2px solid #333;
+          display: flex;
+          list-style: none;
+        }
+        li { margin:5px}
+        a {
+          text-decoration: none;
+          background-color:rgb(179 57 81);
+          color: #fff;
+          padding: 15px;
+        }
+        li a:hover {
+          background-color: rgb(66 28 40);
+        }
+    </style>
+  </head>
+  <body>
+    <p>
+      I am a paragraph and this is a <span>span</span> inside that paragraph. A
+      span is an inline element and so does not respect width and height.
+    </p>
+    <nav>
+      <ul class="links-list">
+        <li><a href="">Link one</a></li>
+        <li><a href="">Link two</a></li>
+        <li><a href="">Link three</a></li>
+      </ul>
+    </nav>    
+  </body>
+</html>

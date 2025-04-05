@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <style>
+      .container {
+        margin: 40px;
+        padding: 40px;
+        width: 300px;
+        border-top: 3px dotted rgb(250, 152, 168);
+        border-bottom: 5px solid blueviolet;
+        border-right: 2px double red;
+      }
+      .box {
+        background-color: gray;
+        padding: inherit;
+        color: white;
+        font-weight: bold;
+        border-top-style: groove;
+        border-top-color: aquamarine;
+        border-left-width: 4;
+        border-left-style: dashed;
+        border-left-color: rgb(127, 148, 255);
+        border-right-style: solid;
+        border-right-color: black;
+        border-right-width: 40;
+      }
+      p.normal {
+        border: 1px solid green;
+        width: 200px;
+        padding: 5px;
+      }
+      p.round1 {
+        border: 1px solid green;
+        width: 200px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      p.round2 {
+        border: 1px solid green;
+        width: 200px;
+        padding: 5px;
+        border-radius: 8px;
+      }
+      p.round3 {
+        border: 1px solid green;
+        width: 200px;
+        padding: 5px;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Change my borders.</div>
+    </div>
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            article p:first-child::first-line {
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: large;
+            }
+            .box::before {
+                content: "This is ::before";
+            }
+            .box::after {
+                content: " ➥";
+            }
+            .box1::before {
+                content: "";
+                width: 100px;
+                height: 100px;
+                background-color: rebeccapurple;
+                display: block;
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <p>
+              Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+              daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+            </p>
+          
+            <p>
+              Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette
+              tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+              Dandelion cucumber earthnut pea peanut soko zucchini.
+            </p>
+          </article>
+          <p class="box">Content in the box in my HTML page.</p>
+          <p class="box1">Content in the box in my HTML page.</p>
+    </body>
+</html>
