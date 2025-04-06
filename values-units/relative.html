@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+        div {
+            margin: 10px 0;
+        }
+        .em-parent {
+            font-size: 20px;
+            border: 1px solid black;
+        }
+       
+        .ems-child1 {
+            font-size: 1.5em;
+        }
+        .ems-childB {
+            font-size: 1.5em;
+        }
+        .rem-parent {
+            border: 1px solid black;
+            font-size: 1.5rem;/* :root font-->html*/
+        }
+        /*Override rem-parent class*/
+        .rems {
+            font-size: 1.6rem; 
+        }
+    </style>
+  </head>
+  <body>
+    <div class="em-parent">
+        <ul class="ems-child1">
+            <li>One</li>
+            <li>Two</li>
+            <li>
+              Three
+              <ul>
+                <li>Three A</li>
+                <li>
+                  Three B
+                  <ul class="ems-childB">
+                    <li>Three B 2</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+
+    <div class="rem-parent">
+        <ul class="rems">
+            <li>One</li>
+            <li>Two</li>
+            <li>
+              Three
+              <ul>
+                <li>Three A</li>
+                <li>
+                  Three B
+                  <ul>
+                    <li>Three B 2</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+  </body>
+</html>
