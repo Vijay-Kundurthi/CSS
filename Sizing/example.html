@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        img {
+            border: 2px solid darkblue;
+        }
+        .no-content {
+            border: 2px solid blueviolet;
+        }
+        .wrapper {
+            font-size: 18px;
+            display: flex;
+            width: 100vw;
+        }
+        .box {
+            border: 3px solid darkblue;
+            width: 200px;
+            height: 100px;
+            margin: 0 5px;
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <img src="https://mdn.github.io/shared-assets/images/examples/big-star.png" alt="star">
+    <hr>
+    <div class="no-content"></div>
+    <hr>
+    <div class="wrapper">
+        <div class="box"></div>
+        <div class="box">
+          These boxes both have a height set, this box has content in it which will
+          need more space than the assigned height, and so we get overflow.
+        </div>
+      </div>
+</body>
+</html>
