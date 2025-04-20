@@ -1,0 +1,77 @@
+html {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+thead th,
+tfoot th {
+    font-family: "Rock Salt", cursive;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid rebeccapurple;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot td {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(233, 232, 232, 0.99);
+}
+
+
+tbody tr:hover {
+    background-color: antiquewhite;
+}
+
+caption {
+    font-family: "Rock Salt", cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+}
+thead {
+    background-color: rgb(222, 240, 240);
+}
+thead th {
+    border: 1px solid rgb(183, 181, 181);
+}

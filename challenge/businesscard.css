@@ -1,0 +1,40 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+  }
+  
+  /* Selectors to be matched up with rulesets */
+  .card {
+    border: 0.2em solid black;
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    border-radius: 1.5em;
+    background-color: red;
+  }
+  .card header {
+    font-size: 18px;
+    padding: 0 5px;
+  }
+  .card article {
+    padding: 5px 5px;
+  }
+  .card article p{
+    color: whitesmoke;
+  }
+  .card article img {
+    max-height: 80px;
+    float: right;
+  }
+
+  .card footer p {
+    font-size: 16px;
+    margin-top: 2em;
+    padding: 0 5px;
+  }
