@@ -1,0 +1,115 @@
+/*General styles*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+section {
+    width: 50%;
+    float: left;
+}
+
+aside {
+    width: 30%;
+    float: left;
+}
+
+nav {
+    width: 20%;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+    padding: 20px;
+    line-height: 1.3;
+    word-spacing: 2px;
+
+}
+
+.links a[href^="https"]::after {
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.25em;
+    background-size: 100%;
+    background-image: url("external-link-52.png");
+}
+
+.square li,
+.aside-list li {
+    list-style-type: square;
+
+}
+
+.aside-list li a,
+.see-you a,
+.contact a,
+.links a {
+    color: #a66;
+}
+
+.contact {
+    list-style-type: lower-alpha;
+}
+
+
+
+.nav-container ul li {
+    list-style-type: none;
+}
+
+.nav-container {
+    display: flex;
+    gap: 1%;
+    outline-color: transparent;
+    text-align: center;
+    line-height: 2;
+    color: black;
+}
+
+.nav-container ul li{
+    border: 1px solid #a66;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.nav-container a {
+    flex: 1;
+    text-decoration: none;
+    outline-color: transparent;
+    text-align: center;
+    
+}
+
+.nav-container a:link,
+a:visited,
+a:focus {
+    color: #a66;
+}
+
+.nav-container ul li:hover {
+    background-color: palegoldenrod;
+}
+.nav-container a:hover {
+    color: black;
+}
+
+header,
+footer {
+    border-bottom: 5px solid #a66;
+    text-align: center;
+}
