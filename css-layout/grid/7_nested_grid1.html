@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested-sub grid</title>
+    <style>
+      .container {
+        font-family: sans-serif;
+      }
+      .container div {
+        background: rebeccapurple;
+        color: white;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        
+      }
+      .container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+      }
+      .subgrid {
+        display: grid;
+        gap: inherit;
+        grid-column: span 3;
+        grid-row: span 2;
+
+        grid-template-columns: subgrid;
+        grid-template-rows: 2fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div class="subgrid">
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+        <div>Eight</div>
+      </div>
+      <div>Nine</div>
+      <div>Ten</div>
+    </div>
+  </body>
+</html>

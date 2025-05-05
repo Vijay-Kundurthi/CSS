@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-1</title>
+    <style>
+        body > * {
+            border: 10px solid rgba(249, 76, 13, 0.9);
+            padding: 5px;
+        }
+        li {
+            list-style: none;
+        }
+        body {
+            display: grid;
+            /* grid-gap: 1em; */
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vm;
+        }
+       
+        @media (min-width: 40em) {
+            body {
+                grid-template-columns: 12em 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+            header {
+                grid-column: span 2;
+            }
+            nav {
+                grid-row: span 2;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h2>Header</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>nav-1</li>
+            <li>nav-2</li>
+            <li>nav-3</li>
+            <li>nav-4</li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Main</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quasi est ea? Distinctio quasi eius doloribus dolores saepe impedit repellat voluptatibus quam perferendis numquam, dolorum tempora tempore, iusto consequuntur asperiores!</p>
+    </main>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+  </body>
+</html>

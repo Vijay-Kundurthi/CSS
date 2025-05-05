@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested-Grid</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+          "header header"
+          "sidebar content"
+          "footer footer";
+        gap: 20px;
+      }
+      header,
+      footer {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rebeccapurple;
+        color: whitesmoke;
+        text-align: center;
+      }
+
+      header {
+        grid-area: header;
+      }
+      aside {
+        border-right: 1px solid rebeccapurple;
+        grid-area: sidebar;
+      }
+      footer {
+        grid-area: footer;
+      }
+      main {
+        grid-area: content;
+        display: grid;
+        grid-template-rows: 4fr 3fr 3fr;
+        gap: inherit;
+      }
+      article {
+        padding: 10px;
+        border: 2px solid rebeccapurple;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <main>
+        <article>
+          <h1>Article one</h1>
+          <p>Content…</p>
+        </article>
+        <article>
+          <h1>Article two</h1>
+          <p>Content…</p>
+        </article>
+        <article>
+          <h1>Article three</h1>
+          <p>Content…</p>
+        </article>
+      </main>
+      <aside>
+        <h2>Aside</h2>
+        <p>Related content</p>
+      </aside>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
